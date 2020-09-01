@@ -1,0 +1,20 @@
+{
+  "name": "Dependencies",
+  "version": "1.0.0",
+  "description": "An SPM dependency checker.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "resporitory": "https://github.com/sbertix/spm-dependencies-checker",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@actions/core": "~1.2.5",
+    "@actions/github": "~4.0.0",
+    "child_process": "~1.0.2",
+    "semver": "~7.3.2",
+    "util": "~0.12.3"
+  }
+}

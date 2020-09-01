@@ -1,0 +1,23 @@
+name:                    'SPM Dependencies Checker'
+author:                  'Stefano Bertagno'
+description:             'Get notified on new versions for your Swift Package Manager dependencies.'
+inputs:
+  language:
+    description:         'The style for the `message` output (HTML or text).'
+    required:            false
+    default:             'txt'
+  excluding:
+    description:         'A newline-separated list of libraries or authors (when starting with `@`) to exclude.'
+    required:            false
+    default:             ''
+outputs:
+  outdated-dependencies:
+    description:         "The array of outdated dependencies' JSON represention."
+  message:
+    description:         'A markdown (or HTML) string containing outdated dependencies info.'
+runs:
+  using:                 'node12'
+  main:                  'dist/index.js'
+branding:
+  icon:                  'check'
+  color:                 'yellow'
